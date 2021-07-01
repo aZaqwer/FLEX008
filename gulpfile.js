@@ -55,8 +55,8 @@ let path = {
 };
 function browserSync(done) {
     browsersync.init({
+        browser: 'chrome',
         server: {
-            browser: 'chrome',
             baseDir: "./" + project_name + "/"
         },
         notify: false,
