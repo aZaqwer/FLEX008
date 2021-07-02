@@ -1,3 +1,67 @@
 //====================================================================================================
+.main {
+    background: #fed100;
+    // .main_content
+
+    &_content {
+        display: flex;
+        margin: 0px auto;
+    }
+
+    // .main_content-item
+
+    &_content-item {
+        flex: 1 1 50%;
+    }
+
+    // .main__body
+
+    &__body {
+    }
+
+    // .main__title
+
+    &__title {
+    }
+
+    // .main__subtitle
+
+    &__subtitle {
+    }
+
+    // .main__btn
+
+    &__btn {
+    }
+
+    // .main__features
+
+    &__features {
+    }
+
+    // .main__phone-button
+
+    &__phone-button {
+    }
+}
+
+.btn-r {
+}
+.features {
+    // .features__item
+
+    &__item {
+    }
+
+    // .features__icon
+
+    &__icon {
+    }
+
+    // .features__text
+
+    &__text {
+    }
+}
 
 //====================================================================================================
