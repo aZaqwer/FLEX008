@@ -1,3 +1,4 @@
+@use "sass:math";
 //<FORM ()>====================================================================================================
 .form {
     &__row {
@@ -36,11 +37,67 @@
         font-weight: 600;
         font-size: 24px;
         color: #f2f2f2;
+        height: 60px;
+        width: 304px;
+        @media (min-width: $md2+px) {
+            &:hover {
+                background: #f8160a;
+            }
+        }
+        @media (max-width: $md1+px) {
+            font-size: 18px;
+            height: 50px;
+            width: 265px;
+        }
+        @media (max-width: $md2+px) {
+            font-size: 16px;
+            height: 40px;
+            width: 205px;
+            padding: 10px 75px;
+            justify-content: center;
+        }
+        @media (max-width: $md3+px) {
+            height: 60px;
+            width: 290px;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 20px;
+        }
     }
 
     // .btn_c
 
     &_c {
+        height: 100px;
+        width: 100px;
+        padding: 25px;
+        background: rgba(61, 155, 233, 0.8);
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 18px rgba(61, 155, 233, 0.3);
+        @media (min-width: $md2+px) {
+            &:hover {
+                background: rgba(15, 131, 226, 0.8);
+            }
+        }
+        @media (max-width: $md1+px) {
+            height: 80px;
+            width: 80px;
+            padding: 15px;
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+        @media (max-width: $md2+px) {
+            height: 60px;
+            width: 60px;
+            padding: 15px;
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
     }
 }
 //</BUTTONS>====================================================================================================
