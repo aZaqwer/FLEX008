@@ -1,5 +1,7 @@
+@use "sass:math";
 //====================================================================================================
 .main {
+    background: $bgColor url("../img/bg02.png") 90% center / auto auto no-repeat;
     // .main__content
 
     &__content {
@@ -8,31 +10,50 @@
     // .main__row
 
     &__row {
+        display: flex;
     }
 
     // .main__column
 
     &__column {
+        flex: 0 1 50%;
     }
 
     // .main__title
 
     &__title {
+        font-weight: 700;
+        font-size: 70px;
+        margin: 0px 0px 25px 0px;
     }
 
     // .main__subtitle
 
     &__subtitle {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0px 0px 50px 0px;
     }
 
     // .main__btn
 
     &__btn {
     }
+    // .main__btn-border
+
+    &__btn-border {
+        border: 2px solid #f2f2f2;
+        height: 60px;
+        width: 304px;
+        margin: -50px 0px 65px 10px;
+    }
 
     // .main__features
 
     &__features {
+        display: flex;
+        margin: 0px -12.5px;
     }
 
     // .main__call-btn
@@ -41,33 +62,31 @@
     }
 }
 
-.btn {
-    // .btn_r
-
-    &_r {
-    }
-
-    // .btn_c
-
-    &_c {
-    }
-}
 .features {
     // .features__items
 
     &__items {
+        display: flex;
+        align-items: center;
+        flex: 1 1 333.33333%;
+        padding: 0px 12.5px;
     }
 }
 .item {
     // .item__icon
 
     &__icon {
+        margin: 0px 10px 0px 0px;
     }
 
     // .item__text
 
     &__text {
+        font-size: 16px;
+        line-height: 21px;
     }
 }
+
+//====================================================================================================
 
 //====================================================================================================
