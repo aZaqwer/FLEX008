@@ -7,8 +7,8 @@
         background: $bgColor url("../img/bg02.png") 95% bottom / contain no-repeat;
     }
     @media (max-width: $md2+px) {
-        background: $bgColor url("../img/bg02.png") 135% bottom / contain no-repeat;
-        // background: $bgColor url("../img/bg01.png") 70% center / contain no-repeat;
+        // background: $bgColor url("../img/bg02.png") 135% bottom / contain no-repeat;
+        background: $bgColor url("../img/bg01.png") 70% center / contain no-repeat;
     }
     @media (max-width: $md4+px) {
         // background: $bgColor url("../img/bg02.png") 135% bottom / contain no-repeat;
