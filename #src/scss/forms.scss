@@ -102,6 +102,18 @@
     // .btn_y
 
     &_y {
+        background: #fed100;
+        height: 50px;
+        font-weight: 500;
+        font-size: 20px;
+        color: $mainColor;
+        line-height: 24px;
+        @media (min-width: $md3+px) {
+            &:hover {
+                background: #bb9900;
+                color: #fff;
+            }
+        }
     }
 }
 //</BUTTONS>====================================================================================================

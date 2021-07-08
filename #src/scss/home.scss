@@ -282,6 +282,9 @@
 .price {
     background: #ffffff;
     padding: 65px 0px;
+    @media (max-width: $md3+px) {
+        margin: 50px 0px;
+    }
     // .price__content
 
     &__content {
@@ -291,30 +294,51 @@
 
     &__title {
         margin: 0px 0px 15px 0px;
+        @media (max-width: $md3+px) {
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0px 0px 40px 0px;
+        }
     }
 
     // .price__subtitle
 
     &__subtitle {
         margin: 0px 0px 60px 0px;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
     }
 
     // .price__row
 
     &__row {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px -12.5px;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
     }
 
     // .price__column
 
     &__column {
         flex: 0 1 33.333%;
+        padding: 0px 12.5px;
     }
 
     // .price__item
 
     &__item {
+        border: 1px solid #ebebeb;
         text-align: center;
+        padding: 78px 10px;
+        @media (max-width: $md3+px) {
+            border: none !important;
+            padding: 0px 10px;
+        }
     }
 }
 
@@ -322,21 +346,63 @@
     // .price-item__title
 
     &__title {
+        font-weight: 600;
+        font-size: 24px;
+        margin: 0px 0px 65px 0px;
+        @media (max-width: $md3+px) {
+            font-weight: 500;
+            font-size: 18px;
+            margin: 0px 0px 24px 0px;
+        }
     }
 
     // .price-item__list
 
     &__list {
+        li {
+            font-size: 16px;
+            margin: 0px 0px 25px 0px;
+            &:last-child {
+                margin: 0;
+            }
+            @media (max-width: $md3+px) {
+                margin: 0px 0px 15px 0px;
+            }
+        }
+        margin: 0px 0px 60px 0px;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 40px 0px;
+        }
     }
 
     // .price-item__price
 
     &__price {
+        font-weight: 600;
+        font-size: 30px;
+        margin: 0px 0px 50px 0px;
     }
 
     // .price-item__btn
 
     &__btn {
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 40px 0px;
+        }
+    }
+
+    // .price-item__all
+
+    &__all {
+        @media (min-width: $md3+px) {
+            display: none;
+        }
+        @media (max-width: $md3+px) {
+            color: $mainColor;
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: underline;
+        }
     }
 }
 
