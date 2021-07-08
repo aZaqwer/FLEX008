@@ -39,6 +39,7 @@ $bgColor: #fed100;
 @import "null";
 body {
     color: $mainColor;
+    background-color: #e5e5e5;
     &._lock {
         overflow: hidden;
     }
