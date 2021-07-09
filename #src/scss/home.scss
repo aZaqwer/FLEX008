@@ -411,6 +411,53 @@
 
 //====================================================================================================
 .avtopark {
+    background-color: #fff;
+    padding: 35px 0px 40px 0px;
+    // .avtopark__content
+
+    &__content {
+    }
+
+    // .avtopark__title
+
+    &__title {
+    }
+
+    // .avtopark__subtitle
+
+    &__subtitle {
+        margin: 0px 0px 60px 0px;
+    }
+
+    // .avtopark__list
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 45px 0px;
+        li {
+            margin: 0px 20px 0px 0px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    // .avtopark__link
+
+    &__link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: $mainColor;
+        border: 1px solid #ebebeb;
+        padding: 13px 56px;
+        cursor: pointer;
+        &._active {
+            border: 1px solid #fed100;
+        }
+    }
+
     // .avtopark__slider
 
     &__slider {
@@ -422,6 +469,12 @@
     }
 }
 
+.avtopark-slider {
+    // .avtopark-slider__wrapper
+
+    &__wrapper {
+    }
+}
 .slider {
     // .slider__item
 
@@ -453,6 +506,10 @@
 
     &__image {
     }
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
 }
 
 //====================================================================================================

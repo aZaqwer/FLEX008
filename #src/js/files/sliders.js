@@ -61,7 +61,7 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let avtoparkSlider = new Swiper('.avtopark__slider', {
+let avtoparkSlider = new Swiper('.avtopark-slider__wrapper', {
     /*
     effect: 'fade',
     autoplay: {
