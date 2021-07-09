@@ -87,8 +87,8 @@ let avtoparkSlider = new Swiper('.avtopark-slider__wrapper', {
     //},
     // Arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.avtopark__item-next',
+        prevEl: '.avtopark__item-prev',
     },
     /*
     breakpoints: {
