@@ -468,6 +468,22 @@
     &__slide {
         padding: 0px 90px;
     }
+
+    // .avtopark__item-next
+
+    &__item-next {
+        &::before {
+            font-weight: 700;
+        }
+    }
+
+    // .avtopark__item-prev
+
+    &__item-prev {
+        &::before {
+            font-weight: 700;
+        }
+    }
 }
 
 .avtopark-slider {
@@ -508,6 +524,8 @@
         line-height: 21px;
         margin: 0px 0px 35px 0px;
         li {
+            background: url("../img/icons/check.svg") 0 2px no-repeat;
+            padding: 0px 0px 0px 25px;
             margin: 0px 0px 25px 0px;
             &:last-child {
                 margin: 0;
@@ -535,10 +553,6 @@
             max-width: 100%;
         }
     }
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
 }
 
 //====================================================================================================

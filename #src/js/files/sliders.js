@@ -87,8 +87,8 @@ let avtoparkSlider = new Swiper('.avtopark-slider__wrapper', {
     //},
     // Arrows
     navigation: {
-        nextEl: '.about__more .more__item_next',
-        prevEl: '.about__more .more__item_prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     /*
     breakpoints: {
@@ -121,3 +121,4 @@ let avtoparkSlider = new Swiper('.avtopark-slider__wrapper', {
     //	el: '.swiper-scrollbar',
     //},
 });
+
