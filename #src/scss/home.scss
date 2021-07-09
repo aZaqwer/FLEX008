@@ -317,6 +317,9 @@
         justify-content: center;
         align-items: center;
         margin: 0px -12.5px;
+        @media (max-width: $md1+px) {
+            overflow: auto;
+        }
         @media (max-width: $md3+px) {
             display: block;
         }
@@ -407,5 +410,50 @@
 }
 
 //====================================================================================================
+.avtopark {
+    // .avtopark__slider
 
+    &__slider {
+    }
+
+    // .avtopark__slide
+
+    &__slide {
+    }
+}
+
+.slider {
+    // .slider__item
+
+    &__item {
+    }
+}
+.slider-item {
+    // .slider-item__body
+
+    &__body {
+    }
+
+    // .slider-item__title
+
+    &__title {
+    }
+
+    // .slider-item__list
+
+    &__list {
+    }
+
+    // .slider-item__btn
+
+    &__btn {
+    }
+
+    // .slider-item__image
+
+    &__image {
+    }
+}
+
+//====================================================================================================
 //====================================================================================================
