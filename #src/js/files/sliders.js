@@ -77,7 +77,7 @@ let avtoparkSlider = new Swiper('.avtopark-slider__wrapper', {
     speed: 800,
     //touchRatio: 0,
     //simulateTouch: false,
-    loop: true,
+    //loop: true,
     //preloadImages: false,
     //lazy: true,
     // Dotts
@@ -90,7 +90,7 @@ let avtoparkSlider = new Swiper('.avtopark-slider__wrapper', {
         nextEl: '.avtopark__item-next',
         prevEl: '.avtopark__item-prev',
     },
-    /*
+
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -98,19 +98,19 @@ let avtoparkSlider = new Swiper('.avtopark-slider__wrapper', {
             autoHeight: true,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
         },
         992: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 20,
         },
         1268: {
-            slidesPerView: 4,
+            slidesPerView: 1,
             spaceBetween: 30,
         },
     },
-    */
+
     on: {
         lazyImageReady: function () {
             ibg();
