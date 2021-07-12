@@ -81,36 +81,36 @@ let avtoparkSlider = new Swiper('.avtopark-slider__wrapper', {
     //preloadImages: false,
     //lazy: true,
     // Dotts
-    //pagination: {
-    //	el: '.slider-quality__pagging',
-    //	clickable: true,
-    //},
+    pagination: {
+        el: '.slider-pagging',
+        clickable: true,
+    },
     // Arrows
     navigation: {
         nextEl: '.avtopark__item-next',
         prevEl: '.avtopark__item-prev',
     },
-
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            autoHeight: true,
+    /*
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                autoHeight: true,
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            1268: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
         },
-        768: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        992: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        1268: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-        },
-    },
-
+    */
     on: {
         lazyImageReady: function () {
             ibg();

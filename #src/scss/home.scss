@@ -607,6 +607,9 @@
     &__btn {
         max-width: 100%;
         padding: 15px 80px;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
     }
 
     // .slider-item__image
@@ -617,6 +620,30 @@
         img {
             max-width: 100%;
         }
+    }
+}
+
+.avtopark-slider .slider-quality__pagging {
+    bottom: 0;
+    //height: 30px;
+}
+.avtopark-slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: $mainColor;
+}
+
+.slider-item__button-mobile {
+    // .slider-item__btn-mobile-mobile
+    @media (min-width: $md3+px) {
+        display: none;
+    }
+    text-align: center;
+    &__btn-mobile {
+        max-width: 100%;
+        padding: 15px 80px;
     }
 }
 
