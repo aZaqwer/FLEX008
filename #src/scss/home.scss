@@ -648,4 +648,175 @@
 }
 
 //====================================================================================================
+.reviews {
+    background: #fed100;
+    padding: 100px 0px 95px 0px;
+    // .reviews__content
+
+    &__content {
+    }
+
+    // .reviews__title
+
+    &__title {
+        margin: 0px 0px 60px 0px;
+    }
+
+    // .reviews__row
+
+    &__row {
+        display: flex;
+        margin: 0px 0px 75px -10px;
+    }
+
+    // .reviews__column
+
+    &__column {
+        flex: 0 1 33.3333%;
+        padding: 0px 10px;
+    }
+
+    // .reviews__items
+
+    &__items {
+    }
+
+    // .reviews__button
+
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.reviews-item {
+    // .reviews-item__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    // .reviews-item__dr
+
+    &__dr {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 20px 0px;
+    }
+
+    // .reviews-item__text
+
+    &__text {
+        font-size: 16px;
+        line-height: 21px;
+        margin: 0px 0px 15px 0px;
+    }
+
+    // .reviews-item__link
+
+    &__link {
+        font-size: 16px;
+        line-height: 21px;
+        color: $mainColor;
+        text-decoration: underline;
+    }
+}
+.item-dr {
+    // .item-dr__date
+
+    &__date {
+        font-size: 16px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    // .item-dr__rating
+
+    &__rating {
+        position: relative;
+        display: inline-block;
+        font-size: 22px;
+        &::before {
+            content: "★★★★★";
+            color: #ff352b;
+        }
+    }
+}
+
+.reviews-button {
+    // .reviews-button__link
+
+    &__link {
+    }
+}
+//====================================================================================================
+.zakaz {
+    background-color: #fff;
+    padding: 125px 150px;
+    // .zakaz__content
+
+    &__content {
+    }
+
+    // .zakaz__title
+
+    &__title {
+        text-align: left;
+        margin: 0px 0px 10px 0px;
+    }
+
+    // .zakaz__subtitle
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 21px;
+        margin: 0px 0px 45px 0px;
+    }
+}
+
+.form {
+    // .form__zakaz
+
+    &__zakaz {
+    }
+}
+.form-zakaz {
+    // .form-zakaz__row
+
+    &__row {
+        display: flex;
+        margin: 0px -35px;
+    }
+
+    // .form-zakaz__column
+
+    &__column {
+        padding: 0px 35px;
+    }
+
+    // .form-zakaz__button
+
+    &__button {
+    }
+}
+
+.checkbox {
+    // .checkbox__input
+
+    &__input {
+    }
+
+    // .checkbox__text
+
+    &__text {
+        color: $mainColor;
+    }
+}
+
+.zakaz__input {
+    border-bottom: 1px solid $mainColor;
+}
+
+//====================================================================================================
 //====================================================================================================
