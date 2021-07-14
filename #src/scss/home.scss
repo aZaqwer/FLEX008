@@ -790,6 +790,10 @@
     // .zakaz__content
 
     &__content {
+        @media (min-width: $md3+px) {
+            width: 1000px;
+            margin: 0px auto;
+        }
     }
 
     // .zakaz__title

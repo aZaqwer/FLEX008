@@ -7,13 +7,20 @@ footer {
 
     &__content {
         padding: 100px 0px;
+        @media (max-width: $md3+px) {
+            padding: 50px 15px 50px 15px;
+        }
     }
 
     // .footer__row
 
     &__row {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        @media (max-width: $md3+px) {
+            display: block;
+            text-align: center;
+        }
     }
 
     // .footer__column
@@ -34,6 +41,9 @@ footer {
         font-size: 30px;
         line-height: 37px;
         margin: 0px 0px 45px 0px;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 35px 0px;
+        }
     }
 
     // .footer__policie
@@ -44,6 +54,9 @@ footer {
         line-height: 130.4%;
         margin: 0px 0px 35px 0px;
         color: $mainColor;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 18px 0px;
+        }
     }
 
     // .footer__personal
@@ -52,16 +65,29 @@ footer {
         font-size: 16px;
         line-height: 20px;
         color: $mainColor;
+        @media (max-width: $md3+px) {
+            display: block;
+            margin: 0px 0px 45px 0px;
+        }
     }
 
     // .footer__menu
 
     &__menu {
+        padding: 0px 0px 0px 50px;
+        @media (max-width: $md3+px) {
+            padding: 0;
+            margin: 0px 0px 45px 0px;
+        }
     }
 
     // .footer__social
 
     &__social {
+        @media (max-width: $md3+px) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     // .footer__email
@@ -70,29 +96,45 @@ footer {
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
+        display: inline-block;
+        border-bottom: 1px solid $mainColor;
         position: relative;
         a {
             color: $mainColor;
         }
-        &::after {
-            content: "";
-            position: absolute;
-            width: 166px;
-            height: 1px;
-            background-color: $mainColor;
-            bottom: 0;
-            left: 0;
+
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 45px 0px;
         }
     }
 
     // .footer__button
 
     &__button {
+        margin: 0px 0px 5px 0px;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    // .footer__button-mobile
+
+    &__button-mobile {
+        @media (min-width: $md3+px) {
+            display: none;
+        }
     }
 
     // .footer__phone
 
     &__phone {
+        font-weight: 500;
+        font-size: 20px;
+        display: inline-block;
+        border-bottom: 1px solid $mainColor;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
     }
 }
 
@@ -126,12 +168,19 @@ footer {
 
     &__item {
         margin: 0px 31px 0px 0px;
+        &:last-child {
+            margin: 0;
+        }
     }
 }
-.btn {
-    // .btn_y
+.item {
+    // .item__body
 
-    &_y {
+    &__body {
+        text-align: center;
+        @media (min-width: $md3+px) {
+            //width: 250px;
+        }
     }
 }
 
