@@ -124,6 +124,29 @@
         font-size: 20px;
         line-height: 24px;
         color: $mainColor;
+        @media (max-width: $md3+px) {
+            width: 292px;
+            height: 60px;
+            padding: 18px 80px;
+        }
+    }
+
+    // .btn_rz
+
+    &_rz {
+        width: 250px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #f2f2f2;
+        background: #ff352b;
+        padding: 13px 31px;
+        @media (min-width: $md2+px) {
+            &:hover {
+                background: #f8160a;
+            }
+        }
     }
 }
 //</BUTTONS>====================================================================================================

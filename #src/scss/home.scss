@@ -651,6 +651,9 @@
 .reviews {
     background: #fed100;
     padding: 100px 0px 95px 0px;
+    @media (max-width: $md3+px) {
+        padding: 40px 0px 50px 0px;
+    }
     // .reviews__content
 
     &__content {
@@ -660,6 +663,11 @@
 
     &__title {
         margin: 0px 0px 60px 0px;
+        @media (max-width: $md3+px) {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0px 0px 40px 0px;
+        }
     }
 
     // .reviews__row
@@ -667,13 +675,24 @@
     &__row {
         display: flex;
         margin: 0px 0px 75px -10px;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 45px 0px;
+        }
     }
 
     // .reviews__column
 
     &__column {
-        flex: 0 1 33.3333%;
-        padding: 0px 10px;
+        @media (min-width: $md3+px) {
+            flex: 0 1 33.3333%;
+            padding: 0px 10px;
+        }
+
+        @media (max-width: $md3+px) {
+            &:nth-child(odd) {
+                display: none;
+            }
+        }
     }
 
     // .reviews__items
@@ -684,8 +703,10 @@
     // .reviews__button
 
     &__button {
-        display: flex;
-        justify-content: center;
+        @media (min-width: $md3+px) {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
@@ -696,6 +717,11 @@
         font-weight: 600;
         font-size: 24px;
         margin: 0px 0px 10px 0px;
+        @media (max-width: $md3+px) {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 
     // .reviews-item__dr
@@ -721,6 +747,9 @@
         line-height: 21px;
         color: $mainColor;
         text-decoration: underline;
+        @media (max-width: $md3+px) {
+            font-weight: 500;
+        }
     }
 }
 .item-dr {
@@ -754,6 +783,10 @@
 .zakaz {
     background-color: #fff;
     padding: 125px 150px;
+    @media (max-width: $md3+px) {
+        text-align: center;
+        padding: 60px 15px 40px 15px;
+    }
     // .zakaz__content
 
     &__content {
@@ -763,7 +796,10 @@
 
     &__title {
         text-align: left;
-        margin: 0px 0px 10px 0px;
+        margin: 0px 0px 15px 0px;
+        @media (max-width: $md3+px) {
+            text-align: center;
+        }
     }
 
     // .zakaz__subtitle
@@ -772,6 +808,22 @@
         font-size: 16px;
         line-height: 21px;
         margin: 0px 0px 45px 0px;
+        @media (max-width: $md3+px) {
+            font-size: 15px;
+            line-height: 131.4%;
+            margin: 0px 0px 40px 0px;
+        }
+    }
+    // .zakaz__button-border
+
+    &__button-border {
+        border: 2px solid #fed100;
+        height: 50px;
+        width: 250px;
+        margin: -40px 0px 10px 10px;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
     }
 }
 
@@ -786,18 +838,24 @@
 
     &__row {
         display: flex;
+        align-items: center;
         margin: 0px -35px;
+        @media (max-width: $md3+px) {
+            display: block;
+        }
     }
 
     // .form-zakaz__column
 
     &__column {
         padding: 0px 35px;
+        @media (max-width: $md3+px) {
+            margin: 0px 0px 40px 0px;
+        }
     }
 
-    // .form-zakaz__button
-
     &__button {
+        margin: 0px 0px 15px 0px;
     }
 }
 
@@ -805,11 +863,16 @@
     // .checkbox__input
 
     &__input {
+        border: 1px solid #333333;
     }
 
     // .checkbox__text
 
     &__text {
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 0.015em;
         color: $mainColor;
     }
 }
