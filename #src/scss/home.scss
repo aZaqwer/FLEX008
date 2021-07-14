@@ -955,11 +955,17 @@
                 }
             }
 
-            &:last-child {
-                &::after {
-                    width: 127px;
-                    height: 1px;
-                    background-color: $mainColor;
+            &:last-child::after {
+                content: "";
+                position: absolute;
+                width: 130px;
+                height: 1px;
+                bottom: 0;
+                left: 9%;
+                background-color: $mainColor;
+                @media (max-width: $md3+px) {
+                    width: 125px;
+                    left: 0;
                 }
             }
         }
