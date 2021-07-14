@@ -820,7 +820,7 @@
         border: 2px solid #fed100;
         height: 50px;
         width: 250px;
-        margin: -40px 0px 10px 10px;
+        margin: -50px 0px 10px 10px;
         @media (max-width: $md3+px) {
             display: none;
         }
@@ -879,6 +879,111 @@
 
 .zakaz__input {
     border-bottom: 1px solid $mainColor;
+}
+
+//====================================================================================================
+.map {
+    height: 660px;
+}
+.map-content {
+    @media (min-width: $md3+px) {
+        position: relative;
+    }
+    @media (max-width: $md3+px) {
+        display: flex;
+        flex-direction: column;
+    }
+    height: 100%;
+    // .map-content__map
+
+    &__map {
+        height: 100%;
+    }
+
+    // .map-content__body
+
+    &__body {
+        background-color: #fff;
+        @media (min-width: $md3+px) {
+            position: absolute;
+            left: 450px;
+            top: 160px;
+            padding: 40px 35px;
+        }
+        @media (max-width: $md3+px) {
+            padding: 35px 0px 0px 25px;
+        }
+    }
+
+    // .map-content__title
+
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        text-transform: uppercase;
+        margin: 0px 0px 40px 0px;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    // .map-content__list
+
+    &__list {
+        margin: 0px 0px 55px 0px;
+        font-size: 16px;
+        line-height: 21px;
+        @media (max-width: $md3+px) {
+            font-size: 15px;
+            line-height: 131.4%;
+        }
+        li {
+            margin: 0px 0px 20px 0px;
+            position: relative;
+            @media (min-width: $md3+px) {
+                padding: 0px 0px 0px 25px;
+                &::before {
+                    content: "";
+                    background: url("../img/icons/check.svg") 0 0 no-repeat;
+                    width: 14px;
+                    height: 14px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: $bgColor;
+                }
+            }
+
+            &:last-child {
+                &::after {
+                    width: 127px;
+                    height: 1px;
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+
+    // .map-content__social
+
+    &__social {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    // .map-content__item
+
+    &__item {
+        margin: 0px 25px 0px 0px;
+        &:last-child {
+            margin: 0;
+        }
+    }
 }
 
 //====================================================================================================
